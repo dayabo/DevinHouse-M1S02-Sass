@@ -1,0 +1,313 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #fbe5cc;
+  height: 100%;
+  width: 100%;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #d70081;
+  padding: 1em;
+  height: 200px;
+  width: 100%;
+}
+
+body header nav h1 {
+  font-family: initial;
+  color: whitesmoke;
+}
+
+body header nav img {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+}
+
+body header nav form {
+  border: 1px solid whitesmoke;
+  border-radius: 0.3em;
+  padding: 0.3 em;
+}
+
+body header nav form input, body header nav form button {
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  border: none;
+  padding: 0.2em;
+}
+
+body header nav form button {
+  cursor: pointer;
+  background: none;
+  color: whitesmoke;
+}
+
+body header nav form button:hover {
+  background-color: whitesmoke;
+  color: #d70081;
+}
+
+body .conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*alinha elementos na horizontal*/
+  height: 100%;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 100px;
+}
+
+body .conteiner .imagem img {
+  width: 300px;
+}
+
+body .itens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e23ee7;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*alinha elementos na horizontal*/
+  height: 100%;
+  /*ou 100vh*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .itens .item {
+  height: 650px;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+
+body .itens .item img {
+  width: 230px;
+  height: 200px;
+}
+
+body .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #05f7c6;
+  width: 100%;
+  height: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .formulario .contato {
+  color: #d70081;
+  padding-bottom: 15px;
+}
+
+body .formulario #nome {
+  width: 600px;
+  height: 45px;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2c3e50;
+  font-size: 14px;
+  border: 0;
+  border-radius: 2px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+body .formulario #email {
+  width: 600px;
+  height: 45px;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2c3e50;
+  font-size: 14px;
+  border: 0;
+  border-radius: 2px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+body .formulario #descrição {
+  width: 600px;
+  height: 45px;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2c3e50;
+  font-size: 14px;
+  border: 0;
+  border-radius: 2px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+body .formulario #enviar {
+  background-color: transparent;
+  border: 1px solid #d70081;
+  border-radius: 0;
+  padding: 10px 20px;
+  color: #d70081;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+body .formulario #enviar:hover {
+  background-color: #d70081;
+  color: whitesmoke;
+}
+
+body .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d70081;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*alinha elementos na horizontal*/
+  color: whitesmoke;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .footer .text-pg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .footer .img-footer-p {
+  width: 120px;
+  height: 60px;
+  padding-right: 20px;
+}
+
+body .footer .img-footer-c {
+  width: 300px;
+  height: 50px;
+}
+
+body .footer .atendimento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .footer .atendimento .endereço {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*alinha elementos na horizontal*/
+}
+
+body .footer .atendimento .endereço p {
+  padding-left: 10px;
+}
+
+body .footer .atendimento .endereço a {
+  padding-left: 10px;
+  color: whitesmoke;
+}
+
+body .footer .atendimento .endereço i {
+  padding-right: 5px;
+}
+
+body .footer .direitos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=index.css.map */

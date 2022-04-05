@@ -1,0 +1,191 @@
+
+@import "./reset";
+@import "./variaveis";
+@import "./mixin";
+
+body{
+    background-color: $bg-color-secudary;
+    @include container ();
+    
+
+    header nav {
+  @include flex ();
+  position: fixed;
+  justify-content: space-between;
+  background-color:$bg-color-primary;
+  padding: 1em;
+  height: 200px;
+  width: 100%;
+
+ 
+    
+
+    h1{
+        font-family:initial;
+        color: $color-primary;
+    }
+    img{
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+    }
+    form{
+        border: 1px solid $color-primary;
+        border-radius: 0.3em;
+        padding: 0.3 em;
+        
+        input{
+            font-size: 1.2em;
+            border-radius: 0.2em;
+            border: none;
+            padding: 0.2em;
+        }
+        button{
+            @extend input;
+            cursor: pointer;
+            background: none;
+            color: $color-primary;
+            &:hover{
+                background-color: $color-primary;
+                color: $color-secudary;
+            }
+           
+            
+        }
+    
+    }
+    }
+    .conteiner {
+     @include flex ();
+    flex-wrap: nowrap;/*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+    justify-content:center; /*alinha elementos na horizontal*/
+   @include container ();
+    padding-left: 5px;
+    padding-top: 100px;
+     
+   
+    .imagem{
+        img{
+        width: 300px;
+    
+    }
+    }
+  }
+ .itens{
+      @include flex ();
+       background-color: $bg-color-tertiary;
+      flex-wrap: nowrap;/*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+         justify-content:space-around; /*alinha elementos na horizontal*/
+        height: 100%; /*ou 100vh*/
+          flex-wrap: wrap;
+        
+      .item{
+        height: 650px;
+        margin-bottom: 0px;
+        margin-top: 70px;
+       
+       img{
+       width: 230px;
+        height: 200px;
+}}     }
+ 
+
+.formulario{
+    @include flex ();
+    background-color:$bg-color-quaternary;
+    width: 100%;
+    height: 700px;
+     flex-direction: column;
+      justify-content:center;
+
+      .contato{
+          color:$color-secudary;
+          padding-bottom: 15px;
+      }
+
+    #nome{
+        @include imputForm ();
+
+    }
+    #email{
+        @include imputForm ();
+    }
+    #descrição{
+        @include imputForm ();
+    }
+    #enviar{
+        background-color: transparent;
+        border: 1px solid $bg-color-primary;
+        border-radius: 0;
+        padding: 10px 20px;
+        color: $bg-color-primary;
+        margin-top: 15px;
+        cursor: pointer;
+        &:hover{
+            background-color:$bg-color-primary;
+            color: $color-primary;
+        }
+       
+    }
+
+}
+
+.footer{
+        @include flex ();
+        background-color:$bg-color-primary;
+        flex-wrap: nowrap;/*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+         justify-content:space-around; /*alinha elementos na horizontal*/
+         color:$color-primary;
+          flex-wrap: wrap;
+
+          .text-pg{
+             @include flex ();
+             flex-direction: column;
+              justify-content:space-around; 
+              
+              
+              
+          }
+          .img-footer-p{
+            width:120px;
+            height: 60px;
+            padding-right: 20px;
+                      }
+           .img-footer-c{
+            width: 300px;
+           height: 50px;
+          }
+          .atendimento{
+            @include flex ();
+             justify-content: space-between;
+             flex-direction: column;
+              
+             
+          .endereço{
+             @include flex ();
+
+            flex-wrap: nowrap;/*deixa os elementos de display block em linha ocupando somento o tamanho pré estabelecido porem ele tenta colocar todos os elementos na linha fazendo com que o tamanho do elemento seja modificado*/
+             justify-content:space-around; /*alinha elementos na horizontal*/
+            
+             p{
+                  padding-left: 10px;
+              }
+              a{
+                  padding-left: 10px;
+                  color: $color-primary;
+                  }
+                  i{
+                    padding-right: 5px;
+                    
+                  }
+              
+          }}
+          .direitos{
+            @include flex();
+            flex-direction: column;
+             justify-content:space-around; 
+             
+
+          }
+}
+}
